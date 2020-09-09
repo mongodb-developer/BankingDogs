@@ -1,0 +1,55 @@
+<html>
+    <head>
+    	<link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="BankingDogs.css" >
+        <link rel="icon" href="dog.png"  type='image/x-icon' >
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="https://s3.amazonaws.com/stitch-sdks/js/bundles/4.6.0/stitch.js"></script>
+        <title>BankingDogs</title>
+    </head>
+    <body>
+        <header>
+        	<div class="jumbotron jumbotron-fluid">
+                <div class="row">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-3">
+                        <img src="https://webassets.mongodb.com/_com_assets/cms/Icons_64x64_Realm_GraphQL-edez3ser6t.svg" style="height:18em;">
+                    </div>
+                    <div class="col-sm-8">
+                        <h1 class="display-3">GraphQL for Banking Dogs</h1>
+                        <h2>The Easy Way to Do the Hard Stuff</h2>
+                        <br>
+                        <br>
+                        <div class="row" id="box">
+                            <div class="col-11">
+                                <form method="POST" onsubmit="userAction()" action="javascript:">
+                                    <input type="text"  onsubmit="userAction()" autocomplete="off" id="myInput" class="form-control" placeholder="customer name..." aria-label="Search" style="font-size: 2em; border:none">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+             </div>
+        </header>
+
+        <div class="container">
+            <div class="card" id="custCard">
+                <div class="row">
+                        <div class=" col-lg-3 item" id="first-image">  </div>
+
+                        <div class="col-lg-9" id="first-description" ></div>
+                </div>
+            </div>
+        <div class="container">
+            <blockquote id="quote"></blockquote>
+        </div>
+        <p id="accounts"></p>
+
+   
+        <script src="BankingDogsScript.js"></script>
+    </body>
+</html>
+

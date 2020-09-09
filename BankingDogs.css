@@ -1,0 +1,69 @@
+.jumbotron {
+        background: #000046;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to left, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        color: white;
+    }
+    
+    .form-control:focus {
+        border-color: inherit;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+    input:focus::-webkit-input-placeholder{
+        color: transparent;
+    }
+    
+    #background-img{
+        
+      position: fixed;
+      right: 0%;
+      background-position: bottom; 
+      margin-right: 5px;
+      bottom: 10px;
+    }
+    .card {
+    background-color: white;
+    border-style:solid;
+    border: 1px solid ;
+    border-color: green;
+  /*  display: none;*/
+    margin-bottom: 20px;
+    margin-right: 10px;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+
+   
+}
+   
+blockquote {
+  /*display: none;*/
+  border-width: 2px 0;
+  border-style: solid;
+  border-color: green;
+  font-size: 1.8em;
+  font-style: oblique; 
+  padding: 1.5em 0 0.5em;
+  margin: 1.5em 0;
+  position: relative;
+}
+blockquote:before {
+  content: '\201C';
+  position: absolute;
+  top: 0em;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  width: 3rem;
+  height: 2rem;
+  font: 6em/1.08em 'PT Sans', sans-serif;
+  color: #7434eb;
+  text-align: center;
+}
+blockquote:after {
+  content: "\2013 \2003" attr(cite);
+  /*display: none;*/
+  text-align: right;
+  font-size: 0.875em;
+  color: transparent;
+}
